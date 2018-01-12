@@ -18,6 +18,7 @@ AnimalFarm() {
 	 * 1. Ask the user which animal they want, then play the sound of that
 	 * animal.
 	 */
+	for (int i= 1; i<6; i+=1 ){
 	String animal = JOptionPane.showInputDialog(null, "Do you want to hear; duck, cow, dog, cat, or llama?");
 if (animal.equals("cow")) {
 	playMoo();
@@ -28,7 +29,14 @@ if (animal.equals("duck")) {
 if (animal.equals("dog")) {
 	playWoof();
 }
-/* 2. Make it so that the user can keep entering new animals. */
+if (animal.equals("llama")) {
+	playllama();
+}	
+	if (animal.equals("cat")) {
+	playmeow();
+}
+	}	
+	/* 2. Make it so that the user can keep entering new animals. */
 }
 
 void playMoo() {

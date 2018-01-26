@@ -23,19 +23,20 @@ AnimalFarm() {
 if (animal.equals("cow")) {
 	playMoo();
 }
-if (animal.equals("duck")) {
+else if (animal.equals("duck")) {
 	playQuack();	
 }
-if (animal.equals("dog")) {
+else if (animal.equals("dog")) {
 	playWoof();
 }
-if (animal.equals("llama")) {
+else if (animal.equals("llama")) {
 	playllama();
 }	
-	if (animal.equals("cat")) {
+else if (animal.equals("cat")) {
 	playmeow();
 }
-	}	
+else {JOptionPane.showMessageDialog(null, "This is not an option");}
+}	
 	/* 2. Make it so that the user can keep entering new animals. */
 }
 
